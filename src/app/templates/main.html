@@ -1,7 +1,24 @@
 <!doctype html>
-<title>Hello from Flask</title>
-{% if name %}
-  <h1>Hello {{ name }}!</h1>
-{% else %}
-  <h1>Hello, World!</h1>
-{% endif %}
+<head>
+  <title>Advent of Code 2023</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Advent of Code 2023</h1>
+  </header>
+  <div id="container">
+    <nav>
+      <a href="#" id="day-1">Day 1</a>
+    </nav>
+    <section id="section"> 
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script>
+    $("#day-1").click(function() {
+      $('#section').html("test")
+    });
+  </script>
+
+</body>

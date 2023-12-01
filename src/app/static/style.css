@@ -1,0 +1,12 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+nav {
+    width: 25%;
+}
+
+section {
+    width: 75%;
+}
