@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from day_1 import day_1_response
 
 app = Flask(__name__)
 
@@ -12,7 +13,8 @@ def index():
 @app.route('/day-1')
 def day1():
    app.logger.debug('day 1')
-   return "day 1"
+   response = day_1_response()
+   return response
 
 
 if __name__ == "__main__":
