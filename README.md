@@ -16,8 +16,8 @@ pipx install poetry==1.7.1
 
 ## Run Application
 
-- use the run flask command
+- use the run flask command with debugger
 
     ```bash
-        poetry run flask --app src/app/main run
+        poetry run flask --app src/app/main run --debug
     ```
