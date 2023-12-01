@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "advent-of-code-2023"
+version = "0.1.0"
+description = "Advent of Code in Python for 2023"
+authors = ["Ryan Zielke <NeoAlchemy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
