@@ -13,7 +13,7 @@ def index():
 @app.route('/day-1')
 def day1():
    app.logger.debug('day 1')
-   response = day_1_response()
+   response = day_1_response(partA=False)
    return response
 
 
