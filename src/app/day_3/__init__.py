@@ -4,7 +4,7 @@ import re
 
 app = Flask(__name__)
 
-def day_2_response(partA):
+def day_3_response(partA):
     app.logger.info('Day 3 Module')
     if partA == True:
         data = pd.read_csv("data/day_3/day3a.csv", header=None, sep="|")
