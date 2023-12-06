@@ -20,7 +20,7 @@ def day1():
 @app.route('/day-2')
 def day2():
    app.logger.debug('day 2')
-   response = day_2_response(partA=True)
+   response = day_2_response(partA=False)
    return response
 
 if __name__ == "__main__":
