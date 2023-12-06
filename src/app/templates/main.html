@@ -9,7 +9,10 @@
   </header>
   <div id="container">
     <nav>
-      <a href="#" id="day-1">Day 1</a>
+      <ul>
+        <li><a href="#" id="day-1">Day 1</a></li>
+        <li><a href="#" id="day-2">Day 2</a></li>
+      </ul>
     </nav>
     <section id="section"> 
     </section>
@@ -19,6 +22,19 @@
     $("#day-1").click(function() {
       $.get({
         url: '/day-1',
+        type: 'GET',
+        success: function(data) {
+          $("#section").html(data)
+        },
+        error: function(error) {
+          $("#section").html(error)
+        }
+      });
+    });
+
+    $("#day-2").click(function() {
+      $.get({
+        url: '/day-2',
         type: 'GET',
         success: function(data) {
           $("#section").html(data)
