@@ -12,6 +12,7 @@
       <ul>
         <li><a href="#" id="day-1">Day 1</a></li>
         <li><a href="#" id="day-2">Day 2</a></li>
+        <li><a href="#" id="day-3">Day 3</a></li>
       </ul>
     </nav>
     <section id="section"> 
@@ -35,6 +36,19 @@
     $("#day-2").click(function() {
       $.get({
         url: '/day-2',
+        type: 'GET',
+        success: function(data) {
+          $("#section").html(data)
+        },
+        error: function(error) {
+          $("#section").html(error)
+        }
+      });
+    });
+
+    $("#day-3").click(function() {
+      $.get({
+        url: '/day-3',
         type: 'GET',
         success: function(data) {
           $("#section").html(data)
