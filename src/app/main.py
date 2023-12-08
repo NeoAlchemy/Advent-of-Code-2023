@@ -34,7 +34,7 @@ def day3():
 @app.route('/day-4')
 def day4():
    app.logger.debug('day 4')
-   response = day_4_response(partA=True)
+   response = day_4_response(partA=False)
    return response
 
 if __name__ == "__main__":
