@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from day_1 import day_1_response
 from day_2 import day_2_response
 from day_3 import day_3_response
+from day_4 import day_4_response
 
 app = Flask(__name__)
 
@@ -28,6 +29,12 @@ def day2():
 def day3():
    app.logger.debug('day 3')
    response = day_3_response(partA=False)
+   return response
+
+@app.route('/day-4')
+def day4():
+   app.logger.debug('day 4')
+   response = day_4_response(partA=True)
    return response
 
 if __name__ == "__main__":
