@@ -3,6 +3,7 @@ from day_1 import day_1_response
 from day_2 import day_2_response
 from day_3 import day_3_response
 from day_4 import day_4_response
+from day_5 import day_5_response
 
 app = Flask(__name__)
 
@@ -35,6 +36,12 @@ def day3():
 def day4():
    app.logger.debug('day 4')
    response = day_4_response(partA=False)
+   return response
+
+@app.route('/day-5')
+def day5():
+   app.logger.debug('day 5')
+   response = day_5_response(partA=True)
    return response
 
 if __name__ == "__main__":
